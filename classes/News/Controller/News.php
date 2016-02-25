@@ -54,7 +54,7 @@ class News {
      * Выводит все новости в виде таблицы
      */
     public function actionIndex() {
-        $out = \Auth\Decorator\Auth::renderExitLink().'<br/><br/>';
+        $out = '';
         if(isset($_GET['msg_action']) && !empty($_GET['msg_action'])) {
             $error_reason = isset($_GET['msg_err_reason']) ? $_GET['msg_err_reason'] : '';
             echo $this->getNewsDecorator()->renderResultMsg($_GET['msg_action'],$_GET['msg_result'], $error_reason);

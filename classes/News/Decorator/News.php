@@ -6,7 +6,7 @@ class News {
     const MAX_TEXT_CUT_ATTEMPTS = 20;
 
     public function renderNewsTable(array $new_rows) {
-        $out = $this->renderAddNewButton();
+        $out = '';
         $out.= '<table>';
             $out.= '<thead>';
                 $out.= '<tr>';
@@ -27,6 +27,7 @@ class News {
             $out.= '</tr>';
         }
         $out.= '</table>';
+        $out.= $this->renderAddNewButton();
         return $out;
     }
 

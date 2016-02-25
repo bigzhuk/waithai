@@ -27,7 +27,9 @@ class Auth {
     }
 
     public static function renderExitLink() {
-        $out  = '<a href = "index.php?action=exit">Выйти</a>';
+        $out  = !empty($_SESSION['login']) ?
+            '<a href = "index.php?action=exit">Выйти</a>':  '<a href = "index.php">Войти</a>'
+        ;
         return $out;
     }
 

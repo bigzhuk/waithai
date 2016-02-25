@@ -71,7 +71,6 @@ class Auth {
     public function actionAuthComplete($msg_result) {
             echo $msg_result;
             echo News::renderNewsEditLink().'<br/>';
-            echo \Auth\Decorator\Auth::renderExitLink();
     }
 
     public function actionAuthProcess($login, $password) {
