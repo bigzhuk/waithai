@@ -8,6 +8,7 @@ session_start();
 	<meta charset="UTF-8">
 	<title>ЭСКС Администрирование</title>
 	<link rel="stylesheet" href="../style/ui.css">
+	<link rel="stylesheet" href="style/admin.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
@@ -37,6 +38,7 @@ use \Auth\Controller;
 use \Auth\Model;
 use \Auth\Decorator;
 require_once('../classes/autoload.php');
+require_once('menu.php');
 
 $auth_controller = new Controller\Auth(new Model\Auth(), new Decorator\Auth());
 if(!($auth_controller->checkRights(Controller\Auth::GROUP_ADMIN)))  {
