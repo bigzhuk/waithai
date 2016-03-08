@@ -3,7 +3,7 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>ЭСКС Администрирование</title>
@@ -15,7 +15,6 @@ header('Content-Type: text/html; charset=utf-8');
 <body>
 
 </body>
-</html>
 
 <script>
 	$(document).ready(function() {
@@ -40,3 +39,4 @@ else {
 }
 
 ?>
+</html>
